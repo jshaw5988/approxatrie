@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "approxatrie"
+version = "0.1.0"
+description = "Compressed prefix-trie matching with exact, prefix, and approximate search."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.8"
+authors = [
+    { name = "James Shaw", email = "james@shawlin4.net" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7", "types-setuptools"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["apxtrie*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

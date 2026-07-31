@@ -1,0 +1,30 @@
+[MAIN]
+# Match the project's supported runtime and avoid generated local artifacts.
+py-version=3.10
+ignore-paths=^\.venv/,^build/,^dist/,^tmp/,^.*\.egg-info/
+persistent=no
+recursive=yes
+
+[MESSAGES CONTROL]
+# This compact project does not require docstrings on every test/helper, and
+# its trie search implementation intentionally has complex recursive methods.
+disable=missing-docstring,
+        too-few-public-methods,
+        too-many-arguments,
+        too-many-positional-arguments,
+        too-many-locals,
+        too-many-branches,
+        too-many-statements,
+        too-many-return-statements,
+        duplicate-code
+
+[BASIC]
+# Common short names used for trie characters, file handles, and indices.
+good-names=i,j,k,ch,fd,st
+
+[FORMAT]
+max-line-length=100
+
+[REPORTS]
+reports=no
+score=yes

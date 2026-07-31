@@ -1,0 +1,290 @@
+## replete	calcium potassium caseinate,soy polysaccharides
+## at request of David
+## replete with fiber	calcium potassium caseinate,soy polysaccharides
+##nutren with fiber	calcium potassium caseinate,soy polysaccharides
+tf replete	replete (nutritional supplement)
+nutren with fiber	nutren with fiber (nutritional supplement)
+## nutren	calcium potassium caseinate,soy polysaccharides
+nutren	nutren (nutritional supplement)
+## peptamin	enzymatically hydrolyzed whey protein
+peptamin	peptamin (nutritional supplement)
+2/2	secondary to (because)
+## 
+lipids	free fatty acid
+##lipid	free fatty acid
+prbc	packed red blood cells
+blood	blood
+rbc	red blood cells
+red blood cells	red blood cells
+bicarbonate	sodium bicarbonate
+## total parenteral nutrition	total parenteral nutrition (nutritional supplement)
+fresh frozen plasma	fresh frozen plasma
+platelets	platelets
+multivitamin	multivitamin preparation
+optimental	optimental (nutritional supplement)
+iv meds	intravenous fluid
+keep vein open with meds	intravenous fluid
+cardiac output flush	fluid infusion
+cardiac output bolus	thermodilution cardiac output injectate
+novasource	novasource (nutritional supplement)
+## novasource pulmonary tf	novasource (nutritional supplement)
+ng contrast	contrast fluid
+ivig	immunoglobulin g
+antibiotics	antibiotics
+sorensen	sorenson's buffer
+sorenson	sorenson's buffer
+sorensen's	sorenson's buffer
+sorensen's buffer	sorenson's buffer
+sorensen's phosphate buffer	sorenson's buffer
+sorenson's	sorensen's buffer
+sorenson's buffer	sorenson's buffer
+sorenson's phosphate buffer	sorenson's
+## normal saline with
+nsc	saline
+heparinized	heparin
+packed cells	packed red blood cells
+packed blood cells	packed red blood cells
+packed red blood cells	packed red blood cells
+packed red cells	packed red blood cells
+promote tf	promote (nutritional supplement)
+## otherwise, it matches "immunoglobulins g" by default, because longest match
+## rather than "immunoglobulins".  Sigh
+immunoglobulin	immunoglobulins
+immuneglobulin	immunoglobulins
+## tf	tube feeding
+## if this is not defined, "tube feeding" mappes to "estradiol"
+tube feeding	enteral nutrition
+## tube feed	enteral nutrition
+stool	stool
+urine	urine
+chest tube	chest tube output
+chest drainage	chest tube drainage (??)
+## crrt	crrt output
+blood loss	blood lost
+tpa	tissue plasminogen activator
+t-pa	tissue plasminogen activator
+tpa rt	tissue plasminogen activator (recombinant)
+pcn g	penicillin g
+## put this in abbreviation
+nacl	saline
+saline flush	saline
+## this is just to fix a problem with partiual match
+milk of magnesium	magnesium hydroxide
+## below doesn't work, because "spray" is a drug form
+sore throat spray	sore throat spray
+valproate sodium	valproate
+## lvp solution	lvp solution
+lvp	lvp solution
+mag-al plus	simethicone|aluminum hydroxide|magnesium hydroxide
+vitamin b1	thiamine
+trace elements	micronutrient preparation
+succinylcholine chloride	succinylcholine
+smx tmp	sulfamethoxazole|trimethoprim
+##nephrocap	multivitamin preparation
+nephrocap	nephrocap
+glutose	dextrose
+## added by James, there is "alumina and magnesia" in map6
+alumina magnesia	aluminum hydroxide|magnesium hydroxide
+## have to add this, otherwise, the last 2 char diff.  Special rule
+## prevent this from matching?
+alumina magnesium	aluminum hydroxide|magnesium hydroxide
+advair diskus	fluticasone|salmeterol
+esomeprazole sodium	esomeprazole
+nipride	nitroprusside
+h2 blocker	h2 blocker
+h2o	water
+urine foley	urine
+foley	urine
+flush	fluid infusion
+flushes	fluid infusion
+epidural infusion	fluid infusion
+cell savers	cell savers
+cell saver	cell savers
+## maybe fix?
+lrprbc	packed red blood cells
+lprbc	packed red blood cells
+rprbc	packed red blood cells
+autologous blood	cell savers
+## some entries have only this, sigh
+autologous	cell savers
+salt-poor albumins	salt-poor albumins
+irrigation	fluid infusion
+plasma	plasma
+surgery intake	fluid
+## ??
+ivpb	fluid infusion
+factor 7a	factor viia
+factor 8	factor viii
+factor 9	factor ix
+factor 13	factor xiii
+plasmapheresis	plasmapheresis plasma
+pheresis	plasmapheresis plasma
+plasma exchange	plasmapheresis plasma
+whole blood	whole blood
+autotransfusion	cell savers
+cryoprecipitate	cryoprecipitate
+## missing in map6, levothyroxine sodium
+levothyroxine	thyroxine
+## copied from aminosyn-hf, original stuff have no ingredient in rxnorm
+aminosyn	alanine|arginine|cysteine|glycine|histidine|isoleucine|leucine|lysine|methionine|phenylalanine|phosphoric acid|proline|serine|threonine|tryptophan|valine
+## clinimix 4.25/20
+clinimix	alanine|arginine|glucose|glycine|histidine|isoleucine|leucine|lysine|methionine|phenylalanine|proline|serine|threonine|tryptophan|tyrosine|valine
+## clinimix e 5/20
+clinimix e	alanine|arginine|calcium chloride|dibasic potassium phosphate|glucose|glycine|histidine|isoleucine|leucine|lysine|magnesium chloride|methionine|phenylalanine|proline|serine|sodium acetate trihydrate|sodium chloride|threonine|tryptophan|tyrosine|valine
+drotrecogin	drotrecogin alfa
+## neo-synephrine, for other misspelling with edit distance 2
+neosynephrine	phenylephrine
+## isuprel hcl
+isuprel	isoproterenol
+advair	fluticasone|salmeterol
+advair hfa	fluticasone|salmeterol
+## copied from max la, BUG, pure guess
+magnesium hydrox/simeth	simethicone|magnesium hydroxide
+hydrox/simeth	simethicone|magnesium hydroxide
+hydrox/mg	simethicone|magnesium hydroxide
+aquaphor	petrolatum
+calmoseptine	menthol|zinc oxide
+cholestyramine	cholestyramine resin
+cerefolin	l-methylfolate|methylcabalamin|n-acetylcysteine
+## from web, exist in Rxnorm, but missing ingredients
+dakin's solution	sodium hypochlorite
+dakin's	sodium hypochlorite
+## from web, exist in Rxnorm, but missing ingredients
+exforge	amiodipine|valsartan
+epoetin	expoetin alfa
+## gi cocktail	donnatal|lidocaine|maalox
+gi cocktail	atropine|hyoscyamine|phenobarbital|scopolamine|lidocaine|aluminum hydroxide|magnesium hydroxide
+infuvite	multivitamin preparation
+lanthanum	lanthanum carbonate
+## copied from preparation h
+## similar to "mineral oil", I currently don't see those forms
+hemorrhoidal ointment	mineral oil|petrolatum|phenylephrine|shark liver oil preparation
+hemorrhoidal	mineral oil|petrolatum|phenylephrine|shark liver oil preparation
+hyzaar	hydrochlorothiazide|losartan
+hydroxypropyl methycellulose	hydroxypropylcellulose
+hydroxypropyl methycell	hydroxypropylcellulose
+## from liothyronine sodium
+liothyronine	triiodothyronine
+lipram	amylases|endopeptidases|lipase
+mercaptopurine	mercaptopurine
+vitamin multi	multivitamin preparation
+multiple vitamins	multivitamin preparation
+mentholatum	camphor|menthol|petrolatum|titanium dioxide
+mycolog	nystatin|triamcinolone
+metanx	l-methylfolate calcium|pyridoxal t-phosphate|methylcobalamin
+norco	acetaminophen|hydrocodone
+## not sure why this is not in map6, but in Rxnorm
+omarcor	omega-3 acid ethyl esters
+## not sure why this is not n map6, but in RxNorm
+olmesartan	olmesartan medoxomil
+## porfimer sodium
+porfimer	dihematoporphyrin ether
+pneumococcal 23	pneumovax 23
+## pneumococcal vaccine	pneumovax vaccine
+pneumovax vaccine	pneumovax 23
+pneumovax	pneumovax 23
+tetanus toxoid	tetanus toxoid vaccine
+neutrogena soap	salicylic acid
+## bug, why not in map6, but in RxNorm
+adrenalin	epinephrine
+## bug, why not in map6, but in RxNorm?
+ammonia spirit, aromatic	ammonia spirit, aromatic
+aromatic ammonia spirit	ammonia spirit, aromatic
+ammonia aromatic	ammonia spirit, aromatic
+## not sure about this, check with Dave
+antihemophilic factor	factor viii
+antivenin crotalidae polyvalent	crotalidae polyvalent immune fab
+antivenin crotalidae fab	crotalidae polyvalent immune fab
+## not sure about this, check with Dave
+artificial tears	carboxymethyl cellulose|hydroxypropyl methylcellulose|hydroxypropyl cellulose
+allbee with C	iron|multivitamin preparation
+b & o supprettes	opium and belladonna 
+b & o supp	opium and belladonna 
+## ask dave if this is acceptable
+bayer	aspirin
+baytet	tetanus immune globulin
+## sometime people don't bother specify type a or type b
+botulinum toxin	botulinum toxin
+## it has more, but are they important
+cetaphil	glycerin|hydrogenated polyisobutene|cetearyl alcohol
+centrum	multivitamin preparation
+chromagen	multivitamin preparation|iron|vitamin c|vitamin b12
+co q10	coenzyme q10
+## coenzyme q10	multivitamin preparation
+co-trimoxazole	trimethoprim|sulfamethoxazole
+crotalidae polyvalent	crotalidae polyvalent immune fab
+crotalidae polyvalent immune	crotalidae polyvalent immune fab
+deplin	l-methylfolate calcium
+diatx zn	vitamin b complex
+diatx	multivitamin preparation
+dilaudid-hp	hydromorphone
+diphtheria	diphtheria toxoid vaccine
+pertussis, acel	acellular pertussis vaccine
+tetanus	tetanus toxoid vaccine
+pertussis, acellular	acellular pertussis vaccine
+pertussis	pertussis vaccine
+ziac	bisoprolol|hydrochlorothiazide
+## parenteral nutrition	parenteral nutrition (nutritional supplement)
+meningococcal conjugate vaccine	meningococcal vaccine
+## comma is a separator, would never detect here
+## vitamins , multi	multivitamin prepartation
+vicodin	acetaminophen|hydrocodone
+## lorcet tablet
+lortab	acetaminophen|hydrocodone
+lorcet	acetaminophen|hydrocodone
+percocet	acetaminophen|oxycodone
+flu vaccines	influenza virus vaccine
+## influenza virus vaccine	influenza virus vaccine
+influenza vaccine	influenza virus vaccine
+influenza vaccine trivalent	trivalent influenza vaccine
+influenza virus trivalent	influenza virus vaccine
+## trivalent influenza vaccine	influenza virus vaccine
+trace mineral	trace mineral
+multiple minerals	multiple minerals
+multi minerals	multiple minerals
+## ocean nasal spray
+ocean	saline
+## not sure if this conflict with above, I added without consultation
+## influenza virus trivalent-split 2004	influenza virus trivalent-split 2004
+influenza virus trivalent-split	influenza virus trivalent-split
+pangestyme	amylases|endopeptidases|lipase
+trimeth sulfate	trimethoprim
+## acidophilus, general term for digestion helping bateria
+acidophilus	l. acidophilus
+bulgaricus	l. acidophilus|bulgaricus
+calcitonin	32-amino acid linear polypeptide hormone
+## copied from fleet phospho-soda
+phospho-soda	sodium phosphate|sodium phosphate, monobasic
+mg sulfate	magnesium sulfate
+## from robitussin pm cold & cough
+robitussin pm	chlorpheniramine|dextromethorphan|pseudoephedrine
+## thyroid desiccated is paraphrase for "
+thyroid desiccated	tyroid (usp)
+
+## this causes not enough statistics in the data
+## pca= patient-controlled analgesia
+## hydromorphone pca	hydromorphone
+
+## pf= preservative free
+
+## originally in map6
+## sodium chloride	sodium chloride
+sodium chloride	saline
+prenatal vitamin	multivitamin preparation
+dialysis	dialysate
+## continuous venovenous hemodialysis
+continuous venovenous hemodialysis	dialysate
+cvvhd	dialysate
+## Continuous Renal Replacement Therapy
+Continuous Renal Replacement Therapy	dialysate
+crrt	dialysate
+## continuous venovenous hemofiltration
+continuous venovenous hemofiltration	dialysate
+cvvh	dialysate
+## continuous arteriovenous hemofiltration
+continuous arteriovenous hemofiltration	dialysate
+cavh	dialysate
+## continuous arteriovenous hemodialysis
+continuous arteriovenous hemodialysis	dialysate
+cavhd	dialysate
+

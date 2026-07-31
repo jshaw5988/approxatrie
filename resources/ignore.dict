@@ -1,0 +1,22 @@
+control	IGNORE
+## dont' want this to match to "tace"
+trace	IGNORE
+sterile	IGNORE
+sodium succinate	IGNORE
+## should be handled in "form.dict", but here just in case
+enteric	IGNORE
+cardiac	IGNORE
+gastric	IGNORE
+## it matched "infed", BUG, FIX
+ed	IGNORE
+## used for blood, prbc
+## unit	IGNORE
+## otherwise, map to inderal
+mineral	IGNORE
+## thyroid maps thyrox
+thyroid	IGNORE
+
+## otherwise match with trental
+## prenatal	IGNORE
+## otherwise, map to actamin
+vitamin	IGNORE
