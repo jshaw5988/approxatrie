@@ -168,7 +168,7 @@ serialized structure must use the `.wd_trie` suffix and be restored with
 Create and activate an isolated virtual environment:
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 ```
 
@@ -176,8 +176,6 @@ Because the package uses a `src/` layout, install the checkout in editable mode
 before running example scripts directly. For example:
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
 python -m pip install -e .
 python extract_entities.py
 ```
@@ -199,6 +197,7 @@ match = trie.find("tylenol pm")
 print(match.id, match.defn)
 ```
 
+You can run `python extract_entities.py` to see a working example.
 Run the example scripts from the repository root so their resource-file paths
 resolve correctly.
 
